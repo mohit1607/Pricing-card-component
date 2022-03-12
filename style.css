@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 620px;
+    min-width: 250px;
+}
+
+.b1,.b2{
+    flex: 1;
+}
+
+.heading{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:hsl(179, 62%, 43%);
+    margin-bottom: 1.5rem;
+}
+
+.highlight{
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);
+}
+
+.text{
+    margin-top: 1rem;
+    color: hsl(179, 62%, 43%) ;
+}
+
+.b1{
+    padding: 2rem;
+    background-color: white;
+}
+
+.b2{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.b2s{
+   padding: 2rem;
+   width: 250px;
+   color: white;
+}
+
+.b2sHeading{
+    font-weight: 700;
+}
+.b2sText{
+    margin-top: 1rem;
+    color: cyan;
+}
+.b2sHighlight{
+    font-size: 2rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.b2sHighlight span{
+    font-size: 1rem;
+    position: absolute;
+    padding: .5rem;
+    color:  cyan;
+}
+
+button{
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid hsl(71, 73%, 54%);
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-weight: 700;
+}
+
+@media(max-width: 600px){
+
+    body{
+        padding: 5px;
+        height: auto;
+        width: auto;
+    }
+
+    .b1, .b2{
+        flex: none;
+    }
+
+    .b1{
+        width: 250px;
+    }
+
+    .b2{
+        flex-wrap: wrap;
+    }
+}
